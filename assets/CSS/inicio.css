@@ -1,0 +1,129 @@
+
+.banner {
+    width: 100%;
+    margin: auto;
+    padding-top: 310px;
+    display: flex;
+    height: 1050px;
+    justify-content: center;
+    color: #fff;
+    background-image: url(../images/Banner/Banner.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner:before {
+    content: '';
+    width: 100%;
+    height: 1050px;
+    background: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner_description {
+    z-index: 1;
+}
+
+.banner_description h1 {
+    color: #ffffff;
+}
+
+.banner a {
+    display: block;
+    padding: 10px 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 150px;
+    font-weight: 700;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner a:hover {
+    color: black;
+    background: #fff;
+    transition: all 200ms;
+}
+
+header {
+  z-index: -1;
+}
+
+@media only screen and (max-width: 767px) {    
+    .banner {
+        height: 900px;
+        padding-top: 150px;
+        background-position-x: -200px;
+    }
+
+    .banner::before{
+        height: 900px;
+    }
+    
+    .banner_description h1 {
+        font-size: 18px;
+        margin: 100px 30px 30px;
+    }
+
+    .banner_description p {
+        font-size: 14px;
+        margin: 0 30px 30px;
+    }
+    
+    .banner a {
+        font-size: 14px;
+        margin: 0 30px 30px;
+        text-align: center;
+    }
+}
+
+  @media only screen and (max-width: 330px) {
+    .banner {
+      height: 900px;
+      -top: 150px;
+    }
+
+    .banner {
+      background-position-x: -200px;
+  }
+
+  footer {
+    padding: 3rem 0;
+  }
+
+ footer .container-footer .redes-container h2{
+  font-size: 0.9em;
+ }
+
+  .redes-container ul li a {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .redes-container ul li a:hover {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .header-footer {
+    font-size: 18px;
+  }
+
+  .container-footer p {
+    font-size: 13px;
+  }
+
+  .redes-container ul li {
+      margin: 0 1px;
+    }
+
+  }
